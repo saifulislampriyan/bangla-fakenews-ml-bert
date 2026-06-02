@@ -1,4 +1,3 @@
-````markdown
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0F2027,50:203A43,100:2C5364&text=Bangla%20Fake%20News%20Detection&fontColor=FFFFFF&fontSize=42&fontAlignY=38&desc=NLP%20%7C%20Machine%20Learning%20%7C%20Multilingual%20BERT&descAlignY=58&descSize=18" />
 </p>
@@ -23,9 +22,9 @@
 
 ---
 
-## 🧠 What This Project Does
+## Project Overview
 
-This project builds an intelligent Bangla fake news detection system that classifies Bangla news articles as either:
+This project builds a Bangla fake news detection system that classifies Bangla news articles as either fake or authentic.
 
 <table align="center">
   <tr>
@@ -47,54 +46,48 @@ This project builds an intelligent Bangla fake news detection system that classi
 
 <br>
 
-The system combines **Bangla text preprocessing**, **TF-IDF vectorization**, **multiple machine learning classifiers**, and a **multilingual BERT-based deep learning model** to detect fake news from Bangla headlines and article content.
+The system combines Bangla text preprocessing, TF-IDF vectorization, multiple classical machine learning classifiers, and a multilingual BERT-based deep learning model to detect fake news from Bangla headlines and article content.
 
 ---
 
-## 🚀 Project Highlights
+## Project Highlights
 
 <table>
   <tr>
-    <td>🇧🇩</td>
     <td><b>Bangla NLP Focused</b></td>
     <td>Designed specifically for Bangla news text classification.</td>
   </tr>
   <tr>
-    <td>🧹</td>
     <td><b>Text Preprocessing</b></td>
     <td>Tokenization, stopword removal, punctuation cleaning, and digit removal.</td>
   </tr>
   <tr>
-    <td>📊</td>
-    <td><b>Exploratory Analysis</b></td>
+    <td><b>Exploratory Data Analysis</b></td>
     <td>Headline/content length analysis, class distribution, and word frequency visualization.</td>
   </tr>
   <tr>
-    <td>🔠</td>
-    <td><b>TF-IDF Features</b></td>
-    <td>Unigram and bigram TF-IDF representation for classical machine learning.</td>
+    <td><b>TF-IDF Feature Extraction</b></td>
+    <td>Unigram and bigram TF-IDF representation for classical machine learning models.</td>
   </tr>
   <tr>
-    <td>🤖</td>
-    <td><b>Multiple ML Models</b></td>
+    <td><b>Machine Learning Models</b></td>
     <td>Logistic Regression, SVM, Random Forest, XGBoost, Naive Bayes, and more.</td>
   </tr>
   <tr>
-    <td>🧠</td>
     <td><b>BERT Classifier</b></td>
-    <td>Transformer-based classification using <code>bert-base-multilingual-cased</code>.</td>
+    <td>Transformer-based text classification using <code>bert-base-multilingual-cased</code>.</td>
   </tr>
 </table>
 
 ---
 
-## 📁 Dataset
+## Dataset
 
-The project uses:
+The project uses the following dataset:
 
 ```text
 fakenewsdataset - 3045.csv
-````
+```
 
 ### Dataset Summary
 
@@ -131,49 +124,49 @@ fakenewsdataset - 3045.csv
 
 ---
 
-## ⚙️ System Architecture
+## System Architecture
 
 ```mermaid
 flowchart LR
-    A[Bangla News Dataset] --> B[EDA]
+    A[Bangla News Dataset] --> B[Exploratory Data Analysis]
     B --> C[Bangla Text Cleaning]
-    C --> D[Headline + Content Merge]
+    C --> D[Headline and Content Merge]
 
     D --> E[TF-IDF Vectorization]
-    E --> F[Classical ML Models]
+    E --> F[Classical Machine Learning Models]
 
     D --> G[BERT Tokenization]
     G --> H[Multilingual BERT]
 
-    F --> I[Evaluation]
+    F --> I[Model Evaluation]
     H --> I
 
-    I --> J[Fake / Authentic Prediction]
+    I --> J[Fake or Authentic Prediction]
 ```
 
 ---
 
-## 🧰 Tech Stack
+## Technology Stack
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,pytorch,sklearn,github" />
 </p>
 
-| Area             | Tools                           |
-| ---------------- | ------------------------------- |
-| Language         | Python                          |
-| Data Processing  | Pandas, NumPy                   |
-| Visualization    | Matplotlib, Seaborn, WordCloud  |
-| NLP              | BNLP Toolkit, TF-IDF            |
-| Machine Learning | Scikit-learn, XGBoost           |
-| Deep Learning    | PyTorch                         |
-| Transformer      | Hugging Face Transformers       |
-| Environment      | Jupyter Notebook / Google Colab |
-| Model Saving     | Joblib                          |
+| Area                 | Tools                           |
+| -------------------- | ------------------------------- |
+| Programming Language | Python                          |
+| Data Processing      | Pandas, NumPy                   |
+| Visualization        | Matplotlib, Seaborn, WordCloud  |
+| NLP                  | BNLP Toolkit, TF-IDF            |
+| Machine Learning     | Scikit-learn, XGBoost           |
+| Deep Learning        | PyTorch                         |
+| Transformer Model    | Hugging Face Transformers       |
+| Environment          | Jupyter Notebook / Google Colab |
+| Model Saving         | Joblib                          |
 
 ---
 
-## 🤖 Models Used
+## Models Used
 
 <table>
   <tr>
@@ -181,10 +174,10 @@ flowchart LR
     <th>Models</th>
   </tr>
   <tr>
-    <td><b>Classical ML</b></td>
+    <td><b>Classical Machine Learning</b></td>
     <td>
-      Logistic Regression, Naive Bayes, SVM, Random Forest, KNN,
-      Decision Tree, Gradient Boosting, AdaBoost, XGBoost
+      Logistic Regression, Naive Bayes, Support Vector Machine, Random Forest,
+      K-Nearest Neighbours, Decision Tree, Gradient Boosting, AdaBoost, XGBoost
     </td>
   </tr>
   <tr>
@@ -197,13 +190,13 @@ flowchart LR
 
 ---
 
-## 📈 Performance Leaderboard
+## Performance Leaderboard
 
 | Rank | Model               | Accuracy | Precision |   Recall | F1-score |
 | ---: | ------------------- | -------: | --------: | -------: | -------: |
-|   🥇 | Logistic Regression | `0.8367` |  `0.7927` | `0.9934` | `0.8818` |
-|   🥈 | Random Forest       | `0.8286` |  `0.7829` | `0.9967` | `0.8770` |
-|   🥉 | Naive Bayes         | `0.8266` |  `0.7795` | `1.0000` | `0.8761` |
+|    1 | Logistic Regression | `0.8367` |  `0.7927` | `0.9934` | `0.8818` |
+|    2 | Random Forest       | `0.8286` |  `0.7829` | `0.9967` | `0.8770` |
+|    3 | Naive Bayes         | `0.8266` |  `0.7795` | `1.0000` | `0.8761` |
 |    4 | Gradient Boosting   | `0.8266` |  `0.8114` | `0.9342` | `0.8685` |
 |    5 | XGBoost             | `0.8226` |  `0.7983` | `0.9507` | `0.8679` |
 |    6 | KNN                 | `0.8226` |  `0.8121` | `0.9243` | `0.8646` |
@@ -213,7 +206,7 @@ flowchart LR
 
 ---
 
-## 🏆 Best Classical Model
+## Best Classical Model
 
 <p align="center">
   <img src="https://img.shields.io/badge/Best%20Model-Logistic%20Regression-00C853?style=for-the-badge" />
@@ -223,9 +216,9 @@ flowchart LR
 
 ---
 
-## 🧠 BERT Result
+## BERT Result
 
-The multilingual BERT model was trained for **3 epochs** and achieved:
+The multilingual BERT model was trained for 3 epochs and achieved the following validation accuracy:
 
 <p align="center">
   <img src="https://img.shields.io/badge/BERT%20Validation%20Accuracy-82.48%25-FF6F00?style=for-the-badge&logo=pytorch&logoColor=white" />
@@ -233,7 +226,7 @@ The multilingual BERT model was trained for **3 epochs** and achieved:
 
 ---
 
-## 🧪 Sample Prediction
+## Sample Prediction
 
 ```text
 Headline:
@@ -248,7 +241,7 @@ Fake News
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 bangla-fake-news-detection/
@@ -273,43 +266,93 @@ bangla-fake-news-detection/
 
 ---
 
-## 🔬 Core Pipeline
+## Quick Start
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/priyansaiful/bangla-fake-news-detection.git
+```
+
+### Enter the Project Directory
+
+```bash
+cd bangla-fake-news-detection
+```
+
+### Install Dependencies
+
+```bash
+pip install pandas numpy matplotlib seaborn wordcloud scikit-learn xgboost joblib torch transformers bnlp-toolkit
+```
+
+### Run the Notebook
+
+```bash
+jupyter notebook fake_news_detection.ipynb
+```
+
+---
+
+## Google Colab Usage
+
+1. Open `fake_news_detection.ipynb` in Google Colab.
+2. Upload the dataset file:
+
+```text
+fakenewsdataset - 3045.csv
+```
+
+3. Update the dataset path if needed:
+
+```python
+df = pd.read_csv('/content/fakenewsdataset - 3045.csv')
+```
+
+4. Run all cells from top to bottom.
+
+---
+
+## Core Pipeline
 
 ```python
 # Load dataset
 df = pd.read_csv("fakenewsdataset - 3045.csv")
 
-# Clean Bangla text
+# Combine headline and content
 df["clean_text"] = df["headline"] + " " + df["content"]
 
 # TF-IDF feature extraction
-tfidf = TfidfVectorizer(ngram_range=(1, 2), max_features=10000)
+tfidf = TfidfVectorizer(
+    ngram_range=(1, 2),
+    max_features=10000
+)
 
-# Train machine learning models
+# Train and transform data
 X_train_tfidf = tfidf.fit_transform(X_train_text)
 X_test_tfidf = tfidf.transform(X_test_text)
 ```
 
 ---
 
-## 🌟 Future Enhancements
+## Future Enhancements
 
 * Use a larger and more balanced Bangla fake news dataset
 * Add Bangla-specific transformer models such as BanglaBERT
 * Improve Bangla text normalization
 * Apply hyperparameter tuning
-* Add explainable AI for prediction interpretation
-* Build a Streamlit web application
-* Deploy the model as a real-time Bangla fake news detector
+* Add explainable AI techniques for prediction interpretation
+* Build a Streamlit or Flask web application
+* Deploy the model as a real-time Bangla fake news detection system
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 <p align="center">
   <b>Saiful Islam Priyan</b>
   <br>
-  Bangla NLP • Machine Learning • Fake News Detection
+  Bangla NLP | Machine Learning | Fake News Detection
 </p>
 
 <p align="center">
@@ -320,13 +363,12 @@ X_test_tfidf = tfidf.transform(X_test_text)
 
 ---
 
-## ⭐ Support This Project
+## Support This Project
 
 <p align="center">
-  <b>If this project helps you, give it a ⭐ on GitHub.</b>
+  <b>If this project helps you, consider giving it a star on GitHub.</b>
 </p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&height=140&section=footer&color=0:2C5364,50:203A43,100:0F2027" />
 </p>
-```
