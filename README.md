@@ -301,24 +301,6 @@ jupyter notebook fake_news_detection.ipynb
 
 ---
 
-## ▶️ Google Colab Usage
-
-1. Open `fake_news_detection.ipynb` in Google Colab.
-2. Upload the dataset file:
-
-```text
-fakenewsdataset - 3045.csv
-```
-
-3. Update the dataset path if needed:
-
-```python
-df = pd.read_csv('/content/fakenewsdataset - 3045.csv')
-```
-
-4. Run all cells from top to bottom.
-
----
 
 ## 🔬 Core Pipeline
 
