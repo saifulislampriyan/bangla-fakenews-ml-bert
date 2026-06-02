@@ -273,35 +273,6 @@ bangla-fake-news-detection/
 
 ---
 
-## ⚡ Quick Start
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/priyansaiful/bangla-fake-news-detection.git
-```
-
-### 2. Enter the Project Directory
-
-```bash
-cd bangla-fake-news-detection
-```
-
-### 3. Install Dependencies
-
-```bash
-pip install pandas numpy matplotlib seaborn wordcloud scikit-learn xgboost joblib torch transformers bnlp-toolkit
-```
-
-### 4. Run the Notebook
-
-```bash
-jupyter notebook fake_news_detection.ipynb
-```
-
----
-
-
 ## 🔬 Core Pipeline
 
 ```python
